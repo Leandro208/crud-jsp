@@ -24,6 +24,7 @@
 			<th>EMAIL</th>
 			<th>SEXO</th>
 			<th>PAÍS</th>
+			<th colspan="2">Opções</th>
 		</tr>
 		<c:forEach items="${list}" var="usuario">
 			<tr>
@@ -33,9 +34,18 @@
 				<td>${usuario.getEmail()}</td>
 				<td>${usuario.getSexo()}</td>
 				<td>${usuario.getPais()}</td>
+				<td><a href="editarUsuario.jsp?id=${usuario.getId()}">Editar</a></td>
+				<td><a href="removerUsuario.jsp">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>
+	
+	<br>
+	
+	<a href="#" >Criar novo usuario</a>
+
+	
+	
 	
 </body>
 </html>
