@@ -42,7 +42,7 @@
 	
 	<br>
 	
-	<a href="#" >Criar novo usuario</a>
+	<a href="addUsuario.jsp" >Criar novo usuario</a>
 
 	
 	
