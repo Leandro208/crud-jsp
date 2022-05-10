@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +34,7 @@
 				<td>${usuario.getSexo()}</td>
 				<td>${usuario.getPais()}</td>
 				<td><a href="editarUsuario.jsp?id=${usuario.getId()}">Editar</a></td>
-				<td><a href="removerUsuario.jsp">Excluir</a></td>
+				<td><a href="removerUsuario.jsp?id=${usuario.getId()}">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -81,6 +81,21 @@ public class UsuarioDao {
 		return status;
 	}
 	
+	public static int deletarUsuario(Usuario usuario) {
+			
+		int status = 0;
+		try {
+			Connection con = getConnection();
+			PreparedStatement ps = (PreparedStatement) con.prepareStatement("DELETE FROM usuario WHERE id=?");
+			ps.setInt(1, usuario.getId());
+			status=ps.executeUpdate();
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		
+		return status;
+	}
+	
 	public static List<Usuario> getAllUsuarios(){
 		List<Usuario> list = new ArrayList<Usuario>();
 		

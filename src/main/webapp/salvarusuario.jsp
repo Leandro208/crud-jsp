@@ -3,5 +3,5 @@
 <jsp:setProperty property="*" name="usuario"/>
 <% 
 	int i = UsuarioDao.updateUsuario(usuario);
-	response.sendRedirect("viewusuarios.jsp");
+	response.sendRedirect("addUsuario-sucess.jsp");
 %>
